@@ -12,11 +12,19 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ElevatedButtonWidget('Cadastrar Viagens', Icons.motorcycle_rounded),
+            ElevatedButtonWidget(
+              'Cadastrar Viagens',
+              Icons.motorcycle_rounded,
+              HomeScreen(),
+            ),
             SizedBox(
               height: 8,
             ),
-            ElevatedButtonWidget('Uso Combustível', Icons.local_gas_station),
+            ElevatedButtonWidget(
+              'Uso Combustível',
+              Icons.local_gas_station,
+              HomeScreen(),
+            ),
           ],
         ),
       ),
