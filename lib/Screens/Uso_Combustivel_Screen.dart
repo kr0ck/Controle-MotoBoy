@@ -8,6 +8,11 @@ class UsoCombustivelScreen extends StatefulWidget {
 class _UsoCombustivelScreenState extends State<UsoCombustivelScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Uso do Combustível'),
+      ),
+      body: Container(),
+    );
   }
 }
