@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:motoboy_controll/Screens/Add_Viagens_Screen.dart';
 
 class ViagensScreen extends StatefulWidget {
   @override
@@ -12,9 +13,14 @@ class _ViagensScreenState extends State<ViagensScreen> {
       appBar: AppBar(
         title: Text('Viagens'),
       ),
-      body: Container(),
+      body: Center(
+        child: Text('Ainda não existem dados!'),
+      ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => AddViagensScreen()));
+        },
         child: Icon(Icons.add),
       ),
     );
