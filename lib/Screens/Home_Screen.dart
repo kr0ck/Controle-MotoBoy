@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             ElevatedButtonWidget(
-              'Cadastrar Viagens',
+              'Viagens',
               Icons.motorcycle_rounded,
               HomeScreen(),
             ),
