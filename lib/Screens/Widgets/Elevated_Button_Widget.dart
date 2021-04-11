@@ -12,7 +12,10 @@ class ElevatedButtonWidget extends StatelessWidget {
         onPressed: () {},
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [Text(nameButton), Icon(iconButton)],
+          children: [
+            Text(nameButton, style: TextStyle(fontWeight: FontWeight.bold)),
+            Icon(iconButton),
+          ],
         ));
   }
 }
