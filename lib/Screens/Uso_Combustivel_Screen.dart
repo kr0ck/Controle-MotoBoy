@@ -13,6 +13,10 @@ class _UsoCombustivelScreenState extends State<UsoCombustivelScreen> {
         title: Text('Uso do Combustível'),
       ),
       body: Container(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
     );
   }
 }

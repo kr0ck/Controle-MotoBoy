@@ -13,6 +13,10 @@ class _ViagensScreenState extends State<ViagensScreen> {
         title: Text('Viagens'),
       ),
       body: Container(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
