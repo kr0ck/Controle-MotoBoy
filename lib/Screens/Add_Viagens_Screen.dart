@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Widgets/Custon_TextFiel_Widget.dart';
+
 class AddViagensScreen extends StatefulWidget {
   @override
   _AddViagensScreenState createState() => _AddViagensScreenState();
@@ -16,11 +18,7 @@ class _AddViagensScreenState extends State<AddViagensScreen> {
       body: Container(
           padding: const EdgeInsets.all(8),
           child: Column(children: [
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'Loja (gruta1 = 1 | gruta 2 = 2)',
-              ),
-            ),
+            CustonTextFieldWidget('Loja (gruta1 = 1 | gruta 2 = 2)'),
           ])),
     );
   }
