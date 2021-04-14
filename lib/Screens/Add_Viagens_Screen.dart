@@ -19,6 +19,10 @@ class _AddViagensScreenState extends State<AddViagensScreen> {
           padding: const EdgeInsets.all(8),
           child: Column(children: [
             CustonTextFieldWidget('Loja (gruta1 = 1 | gruta 2 = 2)'),
+            CustonTextFieldWidget('Saida de'),
+            CustonTextFieldWidget('Destino'),
+            CustonTextFieldWidget('Valor entrega'),
+            CustonTextFieldWidget('Forma de pagamento (1-R\$ | 2-PIX)'),
           ])),
     );
   }
