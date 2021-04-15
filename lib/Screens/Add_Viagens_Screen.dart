@@ -11,6 +11,7 @@ class _AddViagensScreenState extends State<AddViagensScreen> {
   TextEditingController lojaController = TextEditingController();
   TextEditingController saidaDEController = TextEditingController();
   TextEditingController destinoController = TextEditingController();
+  TextEditingController kmController = TextEditingController();
   TextEditingController valorController = TextEditingController();
   TextEditingController pagametoController = TextEditingController();
   @override
@@ -35,6 +36,8 @@ class _AddViagensScreenState extends State<AddViagensScreen> {
             ),
             CustonTextFieldWidget(
                 label: 'Destino', number: false, controller: destinoController),
+            CustonTextFieldWidget(
+                label: 'Km aproximado', number: true, controller: kmController),
             CustonTextFieldWidget(
                 label: 'Valor entrega',
                 number: true,
