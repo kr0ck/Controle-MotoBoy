@@ -43,6 +43,13 @@ class _AddViagensScreenState extends State<AddViagensScreen> {
                 label: 'Forma de pagamento (1-R\$ | 2-PIX)',
                 number: true,
                 controller: pagametoController),
+            SizedBox(
+              height: 28,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('Adicionar'),
+            )
           ])),
     );
   }
