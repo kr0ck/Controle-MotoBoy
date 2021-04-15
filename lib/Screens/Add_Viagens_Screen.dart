@@ -8,6 +8,11 @@ class AddViagensScreen extends StatefulWidget {
 }
 
 class _AddViagensScreenState extends State<AddViagensScreen> {
+  TextEditingController lojaController = TextEditingController();
+  TextEditingController saidaDEController = TextEditingController();
+  TextEditingController destinoController = TextEditingController();
+  TextEditingController valorController = TextEditingController();
+  TextEditingController pagametoController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,11 +23,26 @@ class _AddViagensScreenState extends State<AddViagensScreen> {
       body: Container(
           padding: const EdgeInsets.all(8),
           child: Column(children: [
-            CustonTextFieldWidget('Loja (gruta1 = 1 | gruta 2 = 2)'),
-            CustonTextFieldWidget('Saida de'),
-            CustonTextFieldWidget('Destino'),
-            CustonTextFieldWidget('Valor entrega'),
-            CustonTextFieldWidget('Forma de pagamento (1-R\$ | 2-PIX)'),
+            CustonTextFieldWidget(
+              label: 'Loja (gruta1 = 1 | gruta 2 = 2)',
+              number: true,
+              controller: lojaController,
+            ),
+            CustonTextFieldWidget(
+              label: 'Saida de',
+              number: false,
+              controller: saidaDEController,
+            ),
+            CustonTextFieldWidget(
+                label: 'Destino', number: false, controller: destinoController),
+            CustonTextFieldWidget(
+                label: 'Valor entrega',
+                number: true,
+                controller: valorController),
+            CustonTextFieldWidget(
+                label: 'Forma de pagamento (1-R\$ | 2-PIX)',
+                number: true,
+                controller: pagametoController),
           ])),
     );
   }
